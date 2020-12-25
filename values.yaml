@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: tutum/hello-world
-  tag: latest
+  tag: ${ parameters.tag }
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
