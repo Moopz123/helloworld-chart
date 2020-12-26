@@ -1,4 +1,9 @@
 replicaCount: 1
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxUnavailable: 25%
+    maxAvailable: 100%
 
 image:
   repository: tutum/hello-world
